@@ -1,34 +1,6 @@
 package lysis.nodes;
 
-import lysis.nodes.types.DArrayRef;
-import lysis.nodes.types.DBinary;
-import lysis.nodes.types.DBoolean;
-import lysis.nodes.types.DBoundsCheck;
-import lysis.nodes.types.DCall;
-import lysis.nodes.types.DCharacter;
-import lysis.nodes.types.DConstant;
-import lysis.nodes.types.DDeclareLocal;
-import lysis.nodes.types.DDeclareStatic;
-import lysis.nodes.types.DFloat;
-import lysis.nodes.types.DFunction;
-import lysis.nodes.types.DGenArray;
-import lysis.nodes.types.DGlobal;
-import lysis.nodes.types.DHeap;
-import lysis.nodes.types.DIncDec;
-import lysis.nodes.types.DInlineArray;
-import lysis.nodes.types.DJump;
-import lysis.nodes.types.DJumpCondition;
-import lysis.nodes.types.DLabel;
-import lysis.nodes.types.DLoad;
-import lysis.nodes.types.DLocalRef;
-import lysis.nodes.types.DMemCopy;
-import lysis.nodes.types.DPhi;
-import lysis.nodes.types.DReturn;
-import lysis.nodes.types.DStore;
-import lysis.nodes.types.DString;
-import lysis.nodes.types.DSwitch;
-import lysis.nodes.types.DSysReq;
-import lysis.nodes.types.DUnary;
+import lysis.nodes.types.*;
 
 public abstract class NodeVisitor {
 	public void visit(DConstant node) throws Exception {

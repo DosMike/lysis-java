@@ -1,9 +1,9 @@
 package lysis.instructions;
 
-import java.io.DataOutputStream;
-
 import lysis.lstructure.LBlock;
 import lysis.sourcepawn.SPOpcode;
+
+import java.io.DataOutputStream;
 
 public class LJumpCondition extends LInstructionJump {
 

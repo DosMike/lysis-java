@@ -1,35 +1,18 @@
 package lysis.sourcepawn;
 
+import lysis.*;
+import lysis.lstructure.*;
+import lysis.types.rtti.RttiType;
+import lysis.types.rtti.TypeBuilder;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.Inflater;
-
-import lysis.BitConverter;
-import lysis.ExtendedDataInputStream;
-import lysis.PawnFile;
-import lysis.Public;
-import lysis.Similarity;
-import lysis.lstructure.Argument;
-import lysis.lstructure.Dimension;
-import lysis.lstructure.Function;
-import lysis.lstructure.Native;
-import lysis.lstructure.Scope;
-import lysis.lstructure.Tag;
-import lysis.lstructure.Variable;
-import lysis.lstructure.VariableType;
-import lysis.types.rtti.RttiType;
-import lysis.types.rtti.TypeBuilder;
 
 public class SourcePawnFile extends PawnFile {
 

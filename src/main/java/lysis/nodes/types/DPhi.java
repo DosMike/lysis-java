@@ -1,9 +1,9 @@
 package lysis.nodes.types;
 
-import java.util.LinkedList;
-
 import lysis.nodes.NodeType;
 import lysis.nodes.NodeVisitor;
+
+import java.util.LinkedList;
 
 public class DPhi extends DNode {
 	private LinkedList<DNode> inputs_ = new LinkedList<DNode>();

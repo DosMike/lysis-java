@@ -1,12 +1,12 @@
 package lysis.types.rtti;
 
+import lysis.ExtendedDataInputStream;
+import lysis.sourcepawn.SourcePawnFile;
+
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
-import lysis.ExtendedDataInputStream;
-import lysis.sourcepawn.SourcePawnFile;
 
 public class TypeBuilder {
 	private BufferedInputStream bufferedInput;

@@ -1,10 +1,6 @@
 package lysis.nodes;
 
-import lysis.nodes.types.DBinary;
-import lysis.nodes.types.DDeclareLocal;
-import lysis.nodes.types.DNode;
-import lysis.nodes.types.DTempName;
-import lysis.nodes.types.DUse;
+import lysis.nodes.types.*;
 import lysis.sourcepawn.SPOpcode;
 
 public class NodeRenamer {

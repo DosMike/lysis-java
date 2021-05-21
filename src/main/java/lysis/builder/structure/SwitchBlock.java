@@ -1,8 +1,8 @@
 package lysis.builder.structure;
 
-import java.util.LinkedList;
-
 import lysis.nodes.NodeBlock;
+
+import java.util.LinkedList;
 
 public class SwitchBlock extends ControlBlock {
 	public static class Case {

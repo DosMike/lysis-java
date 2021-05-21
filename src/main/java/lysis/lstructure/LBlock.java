@@ -1,9 +1,9 @@
 package lysis.lstructure;
 
-import java.util.LinkedList;
-
 import lysis.instructions.LControlInstruction;
 import lysis.instructions.LInstruction;
+
+import java.util.LinkedList;
 
 public class LBlock {
 	private long pc_;

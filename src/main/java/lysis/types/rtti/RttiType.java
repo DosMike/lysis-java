@@ -1,9 +1,9 @@
 package lysis.types.rtti;
 
+import lysis.lstructure.VariableType;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import lysis.lstructure.VariableType;
 
 public class RttiType {
 	private boolean isConst_;

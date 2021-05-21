@@ -1,7 +1,6 @@
 package lysis.types;
 
 import lysis.lstructure.Tag;
-import lysis.sourcepawn.OpcodeHelpers;
 import lysis.types.rtti.RttiType;
 import lysis.types.rtti.TypeFlag;
 

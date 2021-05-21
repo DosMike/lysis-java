@@ -1,8 +1,8 @@
 package lysis;
 
-import java.io.DataOutputStream;
-
 import lysis.lstructure.LBlock;
+
+import java.io.DataOutputStream;
 
 public class DebugSpew {
 	public static void DumpGraph(LBlock[] blocks, DataOutputStream tw) throws Exception {

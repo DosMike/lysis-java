@@ -1,21 +1,15 @@
 package lysis;
 
+import lysis.amxmodx.AMXModXFile;
+import lysis.lstructure.*;
+import lysis.sourcepawn.SourcePawnFile;
+
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
-import java.util.LinkedList;
-
-import lysis.amxmodx.AMXModXFile;
-import lysis.lstructure.Argument;
-import lysis.lstructure.Dimension;
-import lysis.lstructure.Function;
-import lysis.lstructure.Native;
-import lysis.lstructure.Scope;
-import lysis.lstructure.Tag;
-import lysis.lstructure.Variable;
-import lysis.lstructure.VariableType;
-import lysis.sourcepawn.SourcePawnFile;
-import lysis.types.rtti.RttiType;
 
 public abstract class PawnFile {
 	protected Function[] functions_;
@@ -36,11 +30,15 @@ public abstract class PawnFile {
 
 	public static PawnFile FromFile(String path) throws Exception {
 		FileInputStream fs = new FileInputStream(path);
+		PawnFile pf = FromSource(fs);
+		fs.close();
+		return pf;
+	}
+	public static PawnFile FromSource(InputStream in) throws Exception {
 		ByteArrayOutputStream bytes = new ByteArrayOutputStream();
 		int b;
-		while ((b = fs.read()) >= 0)
+		while ((b = in.read()) >= 0)
 			bytes.write(b);
-		fs.close();
 		byte[] vec = bytes.toByteArray();
 		long magic = BitConverter.ToUInt32(vec, 0);
 		if (magic == SourcePawnFile.MAGIC)

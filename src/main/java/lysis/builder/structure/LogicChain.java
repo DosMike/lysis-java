@@ -1,8 +1,8 @@
 package lysis.builder.structure;
 
-import java.util.LinkedList;
-
 import lysis.nodes.types.DNode;
+
+import java.util.LinkedList;
 
 public class LogicChain {
 	public class Node {

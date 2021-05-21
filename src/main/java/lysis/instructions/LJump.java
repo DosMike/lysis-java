@@ -1,9 +1,9 @@
 package lysis.instructions;
 
+import lysis.lstructure.LBlock;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
-
-import lysis.lstructure.LBlock;
 
 public class LJump extends LInstructionJump {
 

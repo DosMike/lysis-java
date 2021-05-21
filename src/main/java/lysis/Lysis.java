@@ -1,9 +1,5 @@
 package lysis;
 
-import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
-import java.util.LinkedList;
-
 import lysis.builder.MethodParser;
 import lysis.builder.SourceBuilder;
 import lysis.builder.structure.ControlBlock;
@@ -12,14 +8,13 @@ import lysis.lstructure.Argument;
 import lysis.lstructure.Function;
 import lysis.lstructure.LGraph;
 import lysis.lstructure.VariableType;
-import lysis.nodes.NodeAnalysis;
-import lysis.nodes.NodeBlock;
-import lysis.nodes.NodeBuilder;
-import lysis.nodes.NodeGraph;
-import lysis.nodes.NodeRenamer;
-import lysis.nodes.NodeRewriter;
+import lysis.nodes.*;
 import lysis.types.BackwardTypePropagation;
 import lysis.types.ForwardTypePropagation;
+
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.util.LinkedList;
 
 public class Lysis {
 

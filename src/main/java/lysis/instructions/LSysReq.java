@@ -1,9 +1,9 @@
 package lysis.instructions;
 
+import lysis.lstructure.Native;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
-
-import lysis.lstructure.Native;
 
 public class LSysReq extends LInstruction {
 

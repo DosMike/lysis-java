@@ -1,8 +1,8 @@
 package lysis.instructions;
 
-import java.util.LinkedList;
-
 import lysis.lstructure.LBlock;
+
+import java.util.LinkedList;
 
 public class SwitchCase {
 	private LinkedList<Long> values_ = new LinkedList<Long>();

@@ -1,44 +1,14 @@
 package lysis.types;
 
-import java.nio.ByteBuffer;
-
 import lysis.BitConverter;
 import lysis.Public;
-import lysis.lstructure.Argument;
-import lysis.lstructure.Function;
-import lysis.lstructure.Scope;
-import lysis.lstructure.Signature;
-import lysis.lstructure.Variable;
-import lysis.lstructure.VariableType;
-import lysis.nodes.NodeBlock;
-import lysis.nodes.NodeGraph;
-import lysis.nodes.NodeList;
-import lysis.nodes.NodeType;
-import lysis.nodes.NodeVisitor;
-import lysis.nodes.types.DArrayRef;
-import lysis.nodes.types.DBinary;
-import lysis.nodes.types.DBoolean;
-import lysis.nodes.types.DBoundsCheck;
-import lysis.nodes.types.DCall;
-import lysis.nodes.types.DCharacter;
-import lysis.nodes.types.DConstant;
-import lysis.nodes.types.DDeclareLocal;
-import lysis.nodes.types.DDeclareStatic;
-import lysis.nodes.types.DFloat;
-import lysis.nodes.types.DFunction;
-import lysis.nodes.types.DGenArray;
-import lysis.nodes.types.DGlobal;
-import lysis.nodes.types.DJump;
-import lysis.nodes.types.DJumpCondition;
-import lysis.nodes.types.DLoad;
-import lysis.nodes.types.DLocalRef;
-import lysis.nodes.types.DNode;
-import lysis.nodes.types.DReturn;
-import lysis.nodes.types.DStore;
-import lysis.nodes.types.DString;
-import lysis.nodes.types.DSysReq;
+import lysis.lstructure.*;
+import lysis.nodes.*;
+import lysis.nodes.types.*;
 import lysis.sourcepawn.SPOpcode;
 import lysis.types.TypeUnit.Kind;
+
+import java.nio.ByteBuffer;
 
 public class BackwardTypePropagation extends NodeVisitor {
 	private NodeGraph graph_;

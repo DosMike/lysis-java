@@ -1,8 +1,8 @@
 package lysis.instructions;
 
-import java.io.DataOutputStream;
-
 import lysis.lstructure.Register;
+
+import java.io.DataOutputStream;
 
 public abstract class LInstruction {
 	private long pc_;

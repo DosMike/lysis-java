@@ -1,29 +1,14 @@
 package lysis.amxmodx;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
-import java.util.zip.Inflater;
-
 import lysis.BitConverter;
 import lysis.ExtendedDataInputStream;
 import lysis.PawnFile;
 import lysis.Public;
-import lysis.lstructure.Argument;
-import lysis.lstructure.Dimension;
-import lysis.lstructure.Function;
-import lysis.lstructure.Native;
-import lysis.lstructure.Scope;
-import lysis.lstructure.Tag;
-import lysis.lstructure.Variable;
-import lysis.lstructure.VariableType;
+import lysis.lstructure.*;
+
+import java.io.*;
+import java.util.*;
+import java.util.zip.Inflater;
 
 public class AMXModXFile extends PawnFile {
 

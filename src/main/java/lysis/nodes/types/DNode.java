@@ -1,7 +1,5 @@
 package lysis.nodes.types;
 
-import java.util.LinkedList;
-
 import lysis.lstructure.Tag;
 import lysis.lstructure.VariableType;
 import lysis.nodes.NodeBlock;
@@ -10,6 +8,8 @@ import lysis.nodes.NodeVisitor;
 import lysis.sourcepawn.SourcePawnFile;
 import lysis.types.TypeSet;
 import lysis.types.TypeUnit;
+
+import java.util.LinkedList;
 
 public abstract class DNode {
 	private NodeBlock block_;

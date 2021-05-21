@@ -1,10 +1,10 @@
 package lysis.instructions;
 
-import java.io.DataOutputStream;
-import java.io.IOException;
-
 import lysis.lstructure.Register;
 import lysis.sourcepawn.SPOpcode;
+
+import java.io.DataOutputStream;
+import java.io.IOException;
 
 public class LBinary extends LInstruction {
 

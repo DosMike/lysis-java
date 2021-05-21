@@ -1,9 +1,9 @@
 package lysis.instructions;
 
+import lysis.lstructure.Register;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
-
-import lysis.lstructure.Register;
 
 public class LStoreGlobal extends LInstructionReg {
 

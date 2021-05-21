@@ -1,10 +1,10 @@
 package lysis.instructions;
 
+import lysis.lstructure.LBlock;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.LinkedList;
-
-import lysis.lstructure.LBlock;
 
 public class LSwitch extends LControlInstruction {
 

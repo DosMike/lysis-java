@@ -1,11 +1,11 @@
 package lysis.nodes;
 
-import java.util.LinkedList;
-
 import lysis.lstructure.Register;
 import lysis.nodes.types.DDeclareLocal;
 import lysis.nodes.types.DGenArray;
 import lysis.nodes.types.DNode;
+
+import java.util.LinkedList;
 
 public class AbstractStack {
 	public class UnbalancedStackException extends Exception {

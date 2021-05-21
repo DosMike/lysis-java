@@ -1,25 +1,6 @@
 package lysis.nodes;
 
-import lysis.nodes.types.DArrayRef;
-import lysis.nodes.types.DBinary;
-import lysis.nodes.types.DBoundsCheck;
-import lysis.nodes.types.DCall;
-import lysis.nodes.types.DConstant;
-import lysis.nodes.types.DDeclareLocal;
-import lysis.nodes.types.DFloat;
-import lysis.nodes.types.DGlobal;
-import lysis.nodes.types.DJump;
-import lysis.nodes.types.DJumpCondition;
-import lysis.nodes.types.DLoad;
-import lysis.nodes.types.DLocalRef;
-import lysis.nodes.types.DNode;
-import lysis.nodes.types.DPhi;
-import lysis.nodes.types.DReturn;
-import lysis.nodes.types.DStore;
-import lysis.nodes.types.DString;
-import lysis.nodes.types.DSysReq;
-import lysis.nodes.types.DTempName;
-import lysis.nodes.types.DUnary;
+import lysis.nodes.types.*;
 import lysis.sourcepawn.SPOpcode;
 import lysis.types.CellType;
 import lysis.types.PawnType;

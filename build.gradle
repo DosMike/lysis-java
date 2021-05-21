@@ -6,19 +6,14 @@
  * user guide available at https://docs.gradle.org/4.7/userguide/tutorial_java_projects.html
  */
 
-plugins {
-    // Apply the java plugin to add support for Java
-    id 'java'
+apply plugin: 'java'
+apply plugin: 'maven'
 
-    // Apply the application plugin to add support for building an application
-    id 'application'
+group = 'com.github.dosmike'
+version = '21w20a'
 
-    // Allow generation of eclipse project files.
-    id 'eclipse'
-}
-
-// Define the main class for the application
-mainClassName = 'lysis.Lysis'
+targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
@@ -32,13 +27,48 @@ dependencies {
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+    mavenCentral()
 }
-
-mainClassName = 'lysis.Lysis'
 
 jar {
     manifest {
         attributes 'Main-Class': 'lysis.Lysis'
     }
+}
+
+// stuff below should help jitpack
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+// To specify a license in the pom:
+install {
+    repositories.mavenInstaller {
+        pom.project {
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }
+}
+
+wrapper {
+    gradleVersion = "6.1.1"
+    distributionType = Wrapper.DistributionType.ALL
 }

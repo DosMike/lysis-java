@@ -1,26 +1,16 @@
 package lysis.builder.structure;
 
-import java.util.BitSet;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Stack;
-
 import lysis.PawnFile;
-import lysis.instructions.LAddConstant;
-import lysis.instructions.LControlInstruction;
-import lysis.instructions.LGenArray;
-import lysis.instructions.LGoto;
-import lysis.instructions.LInstruction;
-import lysis.instructions.LJumpCondition;
-import lysis.instructions.LPushConstant;
-import lysis.instructions.LStack;
-import lysis.instructions.LStackAdjust;
-import lysis.instructions.LStoreCtrl;
-import lysis.instructions.Opcode;
+import lysis.instructions.*;
 import lysis.lstructure.LBlock;
 import lysis.nodes.NodeBlock;
 import lysis.nodes.NodeType;
 import lysis.nodes.types.DJump;
+
+import java.util.BitSet;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Stack;
 
 //Currently, we expect that Pawn emits reducible control flow graphs.
 // This seems like a reasonable assumption as the language does not have

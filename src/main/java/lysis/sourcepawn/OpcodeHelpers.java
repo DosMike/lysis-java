@@ -1,7 +1,5 @@
 package lysis.sourcepawn;
 
-import lysis.lstructure.Tag;
-
 public class OpcodeHelpers {
 	public static SPOpcode ConditionToJump(SPOpcode spop, boolean onTrue) {
 		switch (spop) {

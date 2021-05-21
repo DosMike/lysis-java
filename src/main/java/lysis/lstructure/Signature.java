@@ -1,8 +1,8 @@
 package lysis.lstructure;
 
-import java.util.List;
-
 import lysis.types.rtti.RttiType;
+
+import java.util.List;
 
 public class Signature {
 	protected String name_;

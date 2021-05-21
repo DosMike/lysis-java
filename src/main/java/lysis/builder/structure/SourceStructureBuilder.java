@@ -1,8 +1,5 @@
 package lysis.builder.structure;
 
-import java.util.LinkedList;
-import java.util.Stack;
-
 import lysis.builder.structure.SwitchBlock.Case;
 import lysis.instructions.LConstant;
 import lysis.instructions.LInstruction;
@@ -11,12 +8,11 @@ import lysis.lstructure.LBlock;
 import lysis.nodes.NodeBlock;
 import lysis.nodes.NodeGraph;
 import lysis.nodes.NodeType;
-import lysis.nodes.types.DJump;
-import lysis.nodes.types.DJumpCondition;
-import lysis.nodes.types.DNode;
-import lysis.nodes.types.DStore;
-import lysis.nodes.types.DSwitch;
+import lysis.nodes.types.*;
 import lysis.sourcepawn.SPOpcode;
+
+import java.util.LinkedList;
+import java.util.Stack;
 
 public class SourceStructureBuilder {
 	private NodeGraph graph_;
